@@ -431,7 +431,7 @@ function drawMoon(phase){
   mg.addColorStop(0,'#eceff1');mg.addColorStop(.5,'#b0bec5');mg.addColorStop(1,'#78909c');
   ctx.fillStyle=mg;ctx.fillRect(cx-r,cy-r,r*2,r*2);
   // craters
-  [[−20,−14,11],[16,20,8],[−4,30,9],[29,−9,6],[−34,18,7],[10,−34,8],[−14,5,5]].forEach(([x,y,cr])=>{
+  [[-20,-14,11],[16,20,8],[-4,30,9],[29,-9,6],[-34,18,7],[10,-34,8],[-14,5,5]].forEach(([x,y,cr])=>{
     ctx.beginPath();ctx.arc(cx+x,cy+y,cr,0,Math.PI*2);ctx.fillStyle='rgba(80,90,100,.4)';ctx.fill();
     ctx.beginPath();ctx.arc(cx+x-1,cy+y-1,cr*.6,0,Math.PI*2);ctx.fillStyle='rgba(200,210,220,.2)';ctx.fill();
   });
